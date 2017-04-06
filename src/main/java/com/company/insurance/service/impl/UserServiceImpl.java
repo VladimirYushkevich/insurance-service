@@ -4,21 +4,20 @@ import com.company.insurance.domain.User;
 import com.company.insurance.exception.NotFoundException;
 import com.company.insurance.repository.UserRepository;
 import com.company.insurance.service.UserService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.inject.Inject;
 import java.util.Optional;
 
 import static com.company.insurance.utils.GenericRequestResponseMapper.getNullPropertyNames;
 import static org.springframework.beans.BeanUtils.copyProperties;
 
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Inject))
+@AllArgsConstructor
 @Transactional
 @Slf4j
 public class UserServiceImpl implements UserService {

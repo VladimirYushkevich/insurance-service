@@ -4,13 +4,12 @@ import com.company.insurance.domain.Module;
 import com.company.insurance.domain.User;
 import com.company.insurance.repository.ModuleRepository;
 import com.company.insurance.repository.UserRepository;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.annotation.Profile;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-import javax.inject.Inject;
 import java.math.BigDecimal;
 
 import static com.company.insurance.domain.ModuleType.*;
@@ -20,7 +19,7 @@ import static com.company.insurance.domain.ModuleType.*;
  */
 
 @Component
-@RequiredArgsConstructor(onConstructor = @__(@Inject))
+@AllArgsConstructor
 @Profile("!test")
 public class DataLoader implements ApplicationListener<ContextRefreshedEvent> {
 

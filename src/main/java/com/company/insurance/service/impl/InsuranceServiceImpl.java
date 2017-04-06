@@ -8,18 +8,17 @@ import com.company.insurance.model.ModulePrice;
 import com.company.insurance.repository.ModuleRepository;
 import com.company.insurance.repository.UserRepository;
 import com.company.insurance.service.InsuranceService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.inject.Inject;
 import java.util.Optional;
 
 @Service
-@RequiredArgsConstructor(onConstructor = @__(@Inject))
+@AllArgsConstructor
 @Transactional
 @Slf4j
 public class InsuranceServiceImpl implements InsuranceService {

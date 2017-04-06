@@ -36,7 +36,6 @@ dependencies {
     //DB
     compile('com.h2database:h2')
     //Utils
-    compile('javax.inject:javax.inject:1')
     compile('org.projectlombok:lombok:1.16.12')
     compile('com.google.guava:guava:21.0')
     //Test
