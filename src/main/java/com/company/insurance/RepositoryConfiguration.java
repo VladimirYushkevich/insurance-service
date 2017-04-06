@@ -7,13 +7,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.domain.AuditorAware;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableAutoConfiguration
 @EntityScan(basePackages = {"com.company.insurance.domain"})
 @EnableJpaRepositories(basePackages = {"com.company.insurance.repository"})
-@EnableTransactionManagement
 @EnableJpaAuditing(auditorAwareRef = "auditorAware")
 public class RepositoryConfiguration {
 
