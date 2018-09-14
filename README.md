@@ -3,8 +3,8 @@ Insurance [![Build Status](https://travis-ci.org/VladimirYushkevich/insurance-se
 ### Description:
 
 insurance-service is a Spring boot application.
-It uses in memory *h2database* in the persistence layer with appropriate domain model. Database populated during start up via
-corresponding **DataLoader**.
+It uses in memory *h2database* in the persistence layer with appropriate domain model. Database populated during start up 
+via corresponding **DataLoader**.
 For CRUD operations with users/clients **UserController** has been created. All required business logic is in
 **InsuranceController**.
 
